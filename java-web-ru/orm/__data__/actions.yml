@@ -1,0 +1,5 @@
+---
+
+remove:
+  - ../src/main/resources/dbmigration/h2/1.0__initial.sql
+  - ../src/main/resources/dbmigration/model/1.0__initial.model.xml

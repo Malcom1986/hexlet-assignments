@@ -1,0 +1,2 @@
+remove:
+  - ../src/main/resources/db/changelog/changelog-master.xml
