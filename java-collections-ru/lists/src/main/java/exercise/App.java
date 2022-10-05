@@ -7,6 +7,7 @@ import java.util.ArrayList;
 class App {
     public static boolean scrabble(String symbols, String word) {
 
+
         int length = word.length();
         String[] letters = symbols.split("");
         ArrayList coll = new ArrayList(Arrays.asList(letters));
