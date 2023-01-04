@@ -9,7 +9,7 @@
 * [Утилита GNU Parallel для параллельного выполнения](https://www.gnu.org/software/parallel/parallel_tutorial.html)
 * [Установка утилиты GNU Parallel в Ubuntu](https://onstartup.ru/utility/parallel/)
 * [Установка утилиты GNU Parallel в MacOS](https://formulae.brew.sh/formula/parallel)
-* [Сервис Replit.com - позволяет работать с командной оболочкой в браузере](replit.com/)
+* [Сервис Replit.com - позволяет работать с командной оболочкой в браузере](https://replit.com/new/bash)
 
 ## process
 
