@@ -49,5 +49,6 @@ public class UsersController {
     public Mono<User> updateUser(@PathVariable int id, @RequestBody User user) {
         return userService.update(id, user);
     }
+
     // END
 }

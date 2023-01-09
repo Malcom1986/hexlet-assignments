@@ -36,5 +36,6 @@ public class UserService {
     public Mono<Void> delete(Integer id) {
         return userRepository.deleteById(id);
     }
+
     // END
 }
