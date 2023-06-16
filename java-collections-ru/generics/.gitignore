@@ -1,16 +1,5 @@
-# WARNING: Paths must not include the name of the "lessons" directory.
-# Outside, this directory is called "exercises".
-
 .gradle/
 build/
-bin/
-.project
-.settings
-.classpath
-*.class
+caches/
 .idea/
-.vscode/
-tmp/
-*.log
-*.db
-*.hprof
+.DS_Store
