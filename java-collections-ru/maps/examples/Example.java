@@ -93,7 +93,7 @@ public class Example {
 //     * @return Заполненный список номеров и моделей автомобилей.
 //     */
     private static List<String> getCarsList() {
-        // создаём список строк
+        // создаем список строк
         List<String> cars = new ArrayList<>();
         // добавляем элементы в список
         cars.add("O023TO198:Volvo");
