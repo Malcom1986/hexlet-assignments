@@ -16,6 +16,7 @@ public final class App {
         app.get("/welcome", ctx -> ctx.result("Welcome to Hexlet!"));
 
         return app;
+
         // END
     }
 
