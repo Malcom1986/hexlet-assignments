@@ -13,3 +13,6 @@ caches/
 .vscode/
 .project
 .settings
+jte-classes
+.classpath
+bin

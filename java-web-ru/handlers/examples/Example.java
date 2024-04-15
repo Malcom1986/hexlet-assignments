@@ -9,7 +9,7 @@ public final class App {
         // Создаем приложение
         var app = Javalin.create(config -> {
             // Включаем логгирование при разработке
-            config.plugins.enableDevLogging();
+            config.bundledPlugins.enableDevLogging();
         });
 
         List<User> users = List.of("John", "Mark", "Ann");

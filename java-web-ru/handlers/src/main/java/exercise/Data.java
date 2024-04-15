@@ -2,7 +2,7 @@ package exercise;
 
 import java.util.Random;
 import java.util.Locale;
-import com.github.javafaker.Faker;
+import net.datafaker.Faker;
 import java.util.List;
 import java.util.ArrayList;
 
