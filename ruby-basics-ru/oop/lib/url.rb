@@ -22,17 +22,11 @@ class Url
   end
 
   def query_param(key, default = nil)
-    query_params[key] ||= default
+    query_params.fetch(key, default)
   end
 
   def <=>(other)
-    if self.scheme == other.scheme && self.host == other.host && self.port == other.port && self.query_params == other.query_params
-      0
-    else
-      1
-    end
+    [scheme, host, port, query_params] <=> [other.scheme, other.host, other.port, other.query_params]
   end
-
 end
-
 # END
