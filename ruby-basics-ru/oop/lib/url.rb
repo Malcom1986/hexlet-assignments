@@ -16,9 +16,7 @@ class Url
     @url = URI(url)
     query = @url.query || ''
     query_string = URI.decode_www_form(query)
-    @query_params = query_string.each_with_object({}) do |(key, value), acc|
-      acc[key.to_sym] = value
-    end
+    @query_params = query_string.to_h.transform_keys { |k| k.to_sym }
   end
 
   def query_param(key, default = nil)
