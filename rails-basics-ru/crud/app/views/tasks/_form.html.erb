@@ -1,0 +1,41 @@
+<%= form_with model: @task  do |form| %>
+
+  <div class="m-3">
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+    <%= @task.errors.full_messages_for(:name).join("\n") if @task.errors.present? %>
+  </div>
+
+  <div class="m-3">
+    <%= form.label :description %><br>
+    <%= form.text_field :description %>
+    <%= @task.errors.full_messages_for(:description).join("\n") if @task.errors.present? %>
+  </div>
+
+  <div class="m-3">
+    <%= form.label :status %><br>
+    <%= form.text_field :status %>
+    <%= @task.errors.full_messages_for(:status).join("\n") if @task.errors.present?  %>
+  </div>
+
+  <div class="m-3">
+    <%= form.label :performer %><br>
+    <%= form.text_field :performer %>
+    <%= @task.errors.full_messages_for(:performer).join("\n") if @task.errors.present?  %>
+  </div>
+
+  <div class="m-3">
+    <%= form.label :creator %><br>
+    <%= form.text_field :creator %>
+    <%= @task.errors.full_messages_for(:creator).join("\n") if @task.errors.present?  %>
+  </div>
+
+  <div class="m-3">
+    <%= form.label :completed %><br>
+    <%= form.check_box :completed %>
+  </div>
+
+  <div class="m-3">
+    <%= form.submit %>
+  </div>
+<% end %>
