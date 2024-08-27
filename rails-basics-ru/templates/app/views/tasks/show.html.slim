@@ -1,0 +1,20 @@
+h1= @task.name
+.mx-2
+  p= @task.description
+  p
+    | created by:
+    = @task.creator
+  p
+    | assign:
+    = @task.performer
+  p
+    | Status:
+    = @task.status
+  p
+    | Completed:
+    = @task.completed ? 'Yes' : 'No'
+span.mx-2
+  =link_to 'Update', edit_task_path
+
+span.mx-2
+  =link_to 'Delete', task_path(@task), params: {turbo_method: :delete}

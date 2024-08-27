@@ -1,0 +1,4 @@
+= link_to 'Create new article', new_task_path
+- @tasks.each do |task|
+  h4 = link_to task.name, task_path(task)
+  p = task.description
